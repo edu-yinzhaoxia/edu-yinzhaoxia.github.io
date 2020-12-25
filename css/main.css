@@ -177,7 +177,7 @@ body {
 body {
   background: var(--body-bg-color);
   color: var(--text-color);
-  font-family: 'Georgia', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Noto Serif SC', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1em;
   line-height: 2;
 }
@@ -193,7 +193,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Georgia', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Noto Serif SC', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 20px 0 15px;
@@ -985,7 +985,7 @@ pre .javascript .function {
   color: var(--brand-hover-color);
 }
 .site-title {
-  font-family: 'Georgia', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Noto Serif SC', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1.375em;
   font-weight: normal;
   margin: 0;
@@ -1169,7 +1169,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #85169f;
+  background: #4bb3f0;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1440,7 +1440,7 @@ pre .javascript .function {
   }
 }
 .post-body {
-  font-family: 'Georgia', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Noto Serif SC', "PingFang SC", "Microsoft YaHei", sans-serif;
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
@@ -1738,9 +1738,9 @@ pre .javascript .function {
 }
 .posts-expand .post-meta {
   color: #999;
-  font-family: 'Georgia', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Noto Serif SC', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 0.75em;
-  margin: 3px 0 60px 0;
+  margin: 3px 0 0px 0;
   text-align: center;
 }
 .posts-expand .post-meta .post-description {
@@ -2503,8 +2503,15 @@ ul.breadcrumb li + li:last-child {
 .site-subtitle {
   color: #fff;
 }
+.post-toc.motion-element {
+  text-align: center;
+}
 .post-body {
+  word-break: break-all;
   font-size: 16px;
+}
+.post-body p {
+  margin: 0 0 20 0;
 }
 .post-body ul {
   list-style-type: square;
@@ -2512,9 +2519,23 @@ ul.breadcrumb li + li:last-child {
 .post-body a {
   font-weight: bold;
   color: #0593d3;
-  border-bottom: 1px solid #0593d3;
+  border-bottom: 0px solid #0593d3;
 }
 .post-body a:hover {
   color: #e47524;
-  border-bottom: 1px solid #e47524;
+  border-bottom: 0px solid #e47524;
+}
+@media (max-width: 767px) {
+  .content-wrap {
+    padding: 8px;
+  }
+  .post-body {
+    font-size: 14px;
+  }
+  ul {
+    padding-inline-start: 10px;
+  }
+  .post-title {
+    font-size: 18px;
+  }
 }
